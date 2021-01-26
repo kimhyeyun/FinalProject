@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tutorial"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/textView_app_manual_title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorNavyBlue">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="left"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text="어플리케이션 조작법"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView_app_manual_title"
+        android:background="@drawable/view_style"
+        android:layout_above="@+id/tutorial_down_bar"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp">
+        <TextView
+            android:id="@+id/textView_app_manual_contents"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:lineSpacingExtra="5dp"
+            android:text="\n\n1) 화면은 하단의 탭을 터치해서 전환할 수 있습니다. \n\n2) 하단 탭은 왼쪽부터 도움말, 지도, 카메라 순으로 위치해 있습니다. \n\n3) 한번 터치 시, 음성으로 설명이 출력됩니다. 두번 터치 시, 해당 요소가 선택이 됩니다. \n\n4) 초기 화면은 지도입니다. 안전한 경로를 안내하기 위한 화면입니다.\n\n5) 카메라 화면에서는 신호등의 색을 실시간으로 안내해줍니다.\n\n6) 도움말 화면에서는 해당 앱 사용 방법에 대해 자세히 알 수 있습니다.\n\n7) 팝업창을 닫기 위해서는 화면을 두 번 눌러주세요."
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tutorial_down_bar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="3"
+        android:background="@color/colorNavyBlue">
+
+        <LinearLayout
+            android:id="@+id/linear_menu_tutorial"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/ic_info_outline_white_24dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="30dp"/>
+
+            <TextView
+                android:id="@+id/textView_menu_tutorial"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="도움말"
+                android:textColor="#ffffff"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_menu_map"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/ic_map_darkgray_24dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="30dp"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="지도"
+                android:textColor="@color/colorDarkGray"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_menu_camera"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/ic_camera_alt_graydark_24dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="30dp"/>
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:text="카메라"
+                android:textColor="@color/colorDarkGray"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

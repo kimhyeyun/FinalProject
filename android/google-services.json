@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "908773892068",
+    "project_id": "fortheblind",
+    "storage_bucket": "fortheblind.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908773892068:android:41aad3807ec08b334b71f1",
+        "android_client_info": {
+          "package_name": "org.tensorflow.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "908773892068-dadvrcc6f6bf0aaanot0gl9mujc8ne4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtjdGakodVPOr1tL3Wu1kO2kVByt29Uf0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "908773892068-dadvrcc6f6bf0aaanot0gl9mujc8ne4l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright 2016 The TensorFlow Authors. All Rights Reserved.
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+     http://www.apache.org/licenses/LICENSE-2.0
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.tensorflow.demo">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <!--<uses-feature android:name="android.hardware.camera.autofocus" />-->
+
+    <uses-permission android:name="com.javapapers.currentlocationinmap.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+
+
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front.autofocus"  android:required="false"/>
+
+    <supports-screens android:resizeable="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:anyDensity="true" />
+
+
+
+
+
+
+    <application android:allowBackup="true"
+        android:debuggable="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:icon="@drawable/background_splash"
+
+        android:theme="@style/AppTheme"
+        >
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBtjdGakodVPOr1tL3Wu1kO2kVByt29Uf0">
+        </meta-data>
+
+
+
+
+
+
+
+        <!--        <activity android:name="org.tensorflow.demo.ClassifierActivity"-->
+        <!--                  android:screenOrientation="portrait"-->
+        <!--                  android:label="@string/activity_name_classification">-->
+        <!--            <intent-filter>-->
+        <!--                <action android:name="android.intent.action.MAIN" />-->
+        <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+        <!--                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />-->
+        <!--            </intent-filter>-->
+        <!--        </activity>-->
+
+        <!--                <activity android:name="org.tensorflow.demo.DetectorActivity"-->
+        <!--                          android:screenOrientation="portrait"-->
+        <!--                          android:label="@string/activity_name_detection">-->
+        <!--                    <intent-filter>-->
+        <!--                        <action android:name="android.intent.action.MAIN" />-->
+        <!--                        <category android:name="android.intent.category.LAUNCHER" />-->
+        <!--                        <category android:name="android.intent.category.LEANBACK_LAUNCHER" />-->
+        <!--                    </intent-filter>-->
+        <!--                </activity>-->
+
+        <!--                <activity android:name="org.tensorflow.demo.StylizeActivity"-->
+        <!--                          android:screenOrientation="portrait"-->
+        <!--                          android:label="@string/activity_name_stylize">-->
+        <!--                    <intent-filter>-->
+        <!--                        <action android:name="android.intent.action.MAIN" />-->
+        <!--                        <category android:name="android.intent.category.LAUNCHER" />-->
+        <!--                        <category android:name="android.intent.category.LEANBACK_LAUNCHER" />-->
+        <!--                    </intent-filter>-->
+        <!--                </activity>-->
+
+        <!--                <activity android:name=".SpeechActivity"-->
+        <!--                    android:screenOrientation="portrait"-->
+        <!--                    android:label="@string/activity_name_speech">-->
+        <!--                    <intent-filter>-->
+        <!--                        <action android:name="android.intent.action.MAIN" />-->
+        <!--                        <category android:name="android.intent.category.LAUNCHER" />-->
+        <!--                        <category android:name="android.intent.category.LEANBACK_LAUNCHER" />-->
+        <!--                    </intent-filter>-->
+        <!--                </activity>-->
+
+
+        <!--        <activity android:name="org.tensorflow.demo.DetectorActivity"-->
+        <!--            android:screenOrientation="portrait"-->
+        <!--            android:label="@string/activity_name_detection">-->
+        <!--            <intent-filter>-->
+        <!--                <action android:name="android.intent.action.MAIN" />-->
+        <!--                <category android:name="android.intent.category.LAUNCHER" />-->
+        <!--                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />-->
+        <!--            </intent-filter>-->
+        <!--        </activity>-->
+
+
+
+        <activity android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/activity_name_detection"
+            android:theme="@style/SplashTheme">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MapActivity"
+            android:configChanges="orientation|keyboard|screenSize"></activity>
+
+        <activity android:name=".TutorialActivity"></activity>
+
+        <activity android:name=".DetectorActivity"></activity>
+        <activity android:name=".CameraInfoActivity"></activity>
+        <activity android:name=".FuncActivity"></activity>
+        <activity android:name=".HelpActivity"></activity>
+
+        <activity android:name=".SearchActivity"></activity>
+        <activity android:name=".MapInfoActivity"></activity>
+        <activity android:name=".PopupCheckDestActivity" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".PopupActivity" android:theme="@android:style/Theme.Dialog"/>
+
+
+    </application>
+
+
+
+
+</manifest>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/camera_up_name"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorNavyBlue">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="20dp"
+                android:text="카메라 안내"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                />
+        </RelativeLayout>
+
+        /* 카메라 설명 내용*/
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/camera_up_name"
+            android:layout_above="@+id/camera_down_bar"
+            android:background="@drawable/view_style"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            >
+
+            <TextView
+                android:id="@+id/textView_info_camera_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:text="1) 신호등의 색과 남은 시간, 횡단 보도의 거리를 안내해드립니다.\n\n2) 신호등이 인식되면, 인식 완료 안내 후 정보가 안내됩니다.\n\n3) 시간이 안내된 후부터 카운트가 시작됩니다.\n\n4) 안내된 시간에 1~2초 정도의 오차가 있을 수 있으니 주의하시기 바랍니다."
+                android:textColor="#000000"
+                android:lineSpacingExtra="5dp"
+                >
+
+            </TextView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/camera_down_bar"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:weightSum="3"
+            android:background="@color/colorNavyBlue">
+
+            <LinearLayout
+                android:id="@+id/linear_menu_tutorial"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:src="@drawable/ic_info_outline_white_24dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="30dp"/>
+
+                <TextView
+                    android:id="@+id/textView_menu_tutorial"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:text="도움말"
+                    android:textColor="#ffffff"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear_menu_map"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:src="@drawable/ic_map_darkgray_24dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="30dp"/>
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:text="지도"
+                    android:textColor="@color/colorDarkGray"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_menu_camera"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:src="@drawable/ic_camera_alt_graydark_24dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="30dp"/>
+
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:text="카메라"
+                    android:textColor="@color/colorDarkGray"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
