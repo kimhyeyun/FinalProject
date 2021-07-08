@@ -4,3 +4,6 @@
 ### 시각장애인을 위한 도보 경로 안내 안드로이드 어플 프로젝트 
   
 
+### [💽 시현영상][link]
+
+[link]:https://www.youtube.com/watch?v=c3CmbfIzA3Q
